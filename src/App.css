@@ -1,12 +1,46 @@
+/* Jurassic Park inspired app styling */
+
 #root {
-  max-width: 1280px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2.5rem 1.5rem;
   text-align: center;
 }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #3d92e7ec;
-  color: #afe491;
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Impact", "Haettenschweiler", "Arial Black", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: radial-gradient(circle at 10% 10%, #0b0b0b 0%, #050505 30%, #000000 100%);
+  color: #ffef8a; /* pale yellow */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Title styling — bold red with yellow outline like the JP logo */
+h1 {
+  display: inline-block;
+  margin: 0 auto 1.25rem auto;
+  padding: 0.5rem 1.4rem;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffd84d; /* yellow */
+  background: linear-gradient(180deg, #8b0000 0%, #5a0000 100%);
+  border-radius: 10px;
+  border: 6px solid #000;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8), inset 0 -6px 12px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 0 #000, 0 0 12px rgba(255,160,0,0.25);
+}
+
+/* Page background vignette */
+.page-wrapper {
+  padding: 2rem 1rem 4rem 1rem;
+}
+
+/* small helper to center content columns */
+.center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

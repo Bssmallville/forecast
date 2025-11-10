@@ -14,11 +14,11 @@ function WeatherDisplay({ weather, loading, error }) {
         <strong>{weather.weather[0].main}</strong> - {weather.weather[0].description}
       </p>
       <p>
-        Temperature: {Math.round(weather.main.temp)}°C<br />
-        Feels like: {Math.round(weather.main.feels_like)}°C
+        Temperature: {Math.round(weather.main.temp)}°F<br />
+        Feels like: {Math.round(weather.main.feels_like)}°F
       </p>
       <p>Humidity: {weather.main.humidity}%</p>
-      <p>Wind: {weather.wind.speed} m/s</p>
+      <p>Wind: {weather.wind.speed} mph</p>
     </div>
   )
 }

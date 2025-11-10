@@ -32,4 +32,6 @@
 
 .search-bar-button:hover {
   background: #225ea8;
+  border:1px solid rgb(146, 85, 23);
+  color:palevioletred
 }
